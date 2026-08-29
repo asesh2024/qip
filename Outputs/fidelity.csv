@@ -1,0 +1,13 @@
+encoder,noise,mean_fidelity
+basis,0.0,1.0
+basis,0.05,0.97515625
+basis,0.1,0.950625
+basis,0.2,0.9025000000000004
+angle,0.0,1.0
+angle,0.05,0.950625
+angle,0.1,0.9025
+angle,0.2,0.81
+amplitude,0.0,1.0
+amplitude,0.05,0.9097269473716627
+amplitude,0.1,0.8267190080244807
+amplitude,0.2,0.6813584324337472
