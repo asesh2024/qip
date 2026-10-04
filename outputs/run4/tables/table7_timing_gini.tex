@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Simulator wall-clock latency and Gini importance (mean over noise levels). Importances among collinear features are not identifiable.}
+\label{tab:timing}
+\begin{tabular}{lccccccc}
+\toprule
+Encoder & Enc. ($\mu$s/input, NumPy) & Dec. ($\mu$s/inst.) & b0 & b1 & parity & weight & correlation \\
+\midrule
+Basis & 41.7 & 4.18 & 0.234 & 0.245 & 0.174 & 0.251 & 0.097 \\
+\midrule
+Angle & 73.9 & 4.46 & 0.285 & 0.266 & 0.129 & 0.217 & 0.102 \\
+\midrule
+Entangling & 81.1 & 4.37 & 0.279 & 0.179 & 0.237 & 0.188 & 0.117 \\
+\bottomrule
+\end{tabular}
+\end{table}

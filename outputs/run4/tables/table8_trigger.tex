@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Peak posteriors and trigger rates at $\tau_{\mathrm{conf}}=0.65$ (single train/test seed pair 42/100).}
+\label{tab:lime_trigger_distribution}
+\begin{tabular}{llcccccc}
+\toprule
+Encoder & $\epsilon$ & Mean $\pm$ Std & Median & [Min, Max] & $\Delta$ & Triggered & Rate (\\%) \\
+\midrule
+Basis & 0.00 & 0.998$\pm$0.000 & 0.998 & [0.998, 0.998] & +0.348 & 0 & 0.0 \\
+Basis & 0.05 & 0.970$\pm$0.008 & 0.967 & [0.961, 0.982] & +0.311 & 0 & 0.0 \\
+Basis & 0.10 & 0.946$\pm$0.013 & 0.940 & [0.931, 0.968] & +0.281 & 0 & 0.0 \\
+Basis & 0.20 & 0.908$\pm$0.026 & 0.887 & [0.887, 0.955] & +0.237 & 0 & 0.0 \\
+\midrule
+Angle & 0.00 & 0.673$\pm$0.011 & 0.675 & [0.657, 0.688] & +0.007 & 0 & 0.0 \\
+Angle & 0.05 & 0.649$\pm$0.018 & 0.646 & [0.622, 0.670] & Straddles & 5{,}063 & 50.6 \\
+Angle & 0.10 & 0.618$\pm$0.021 & 0.632 & [0.596, 0.644] & +0.006 & 10{,}000 & 100.0 \\
+Angle & 0.20 & 0.582$\pm$0.018 & 0.570 & [0.560, 0.601] & +0.049 & 10{,}000 & 100.0 \\
+\midrule
+Entangling & 0.00 & 0.664$\pm$0.008 & 0.659 & [0.654, 0.675] & +0.004 & 0 & 0.0 \\
+Entangling & 0.05 & 0.624$\pm$0.014 & 0.616 & [0.606, 0.643] & +0.007 & 10{,}000 & 100.0 \\
+Entangling & 0.10 & 0.599$\pm$0.015 & 0.587 & [0.586, 0.623] & +0.027 & 10{,}000 & 100.0 \\
+Entangling & 0.20 & 0.507$\pm$0.010 & 0.506 & [0.494, 0.522] & +0.128 & 10{,}000 & 100.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

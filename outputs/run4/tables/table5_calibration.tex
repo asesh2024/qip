@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Top-label ECE, Brier score, log loss and accuracy.}
+\label{tab:calibration}
+\begin{tabular}{llcccc}
+\toprule
+Encoder & $\epsilon$ & ECE & Brier & Log loss & Accuracy \\
+\midrule
+Basis & 0.00 & 0.0016 & 0.0000 & 0.0016 & 1.0000 \\
+Basis & 0.05 & 0.0043 & 0.0498 & 0.1370 & 0.9745 \\
+Basis & 0.10 & 0.0050 & 0.0938 & 0.2259 & 0.9508 \\
+Basis & 0.20 & 0.0220 & 0.1762 & 0.3686 & 0.9030 \\
+\midrule
+Angle & 0.00 & 0.0051 & 0.5114 & 0.9710 & 0.6677 \\
+Angle & 0.05 & 0.0118 & 0.5456 & 1.0265 & 0.6370 \\
+Angle & 0.10 & 0.0064 & 0.5676 & 1.0615 & 0.6119 \\
+Angle & 0.20 & 0.0134 & 0.6080 & 1.1279 & 0.5687 \\
+\midrule
+Entangling & 0.00 & 0.0049 & 0.5107 & 0.9714 & 0.6686 \\
+Entangling & 0.05 & 0.0038 & 0.5624 & 1.0586 & 0.6201 \\
+Entangling & 0.10 & 0.0325 & 0.5893 & 1.1013 & 0.5915 \\
+Entangling & 0.20 & 0.0066 & 0.6523 & 1.2100 & 0.5138 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,6 @@
+quantity,value
+mean naive ms per explanation (measured),53.75657173595085
+flagged instances,55063.0
+"projected hours, flagged only",0.822221697082406
+"projected hours, all instances",1.7918857245316948
+workload reduction (x),2.1793218676788406

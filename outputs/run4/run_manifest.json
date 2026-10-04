@@ -1,0 +1,57 @@
+{
+  "config": {
+    "output_dir": "outputs/run4",
+    "dataset_path": "data/quantum_dataset_10000.csv",
+    "train_seed": 42,
+    "test_seed": 100,
+    "n_train_base": 2000,
+    "n_test_base": 2000,
+    "shots": 5,
+    "calibration_fraction": 0.25,
+    "confidence_threshold": 0.65,
+    "tau_sweep": [
+      0.55,
+      0.58,
+      0.6,
+      0.62,
+      0.64,
+      0.65,
+      0.66,
+      0.68,
+      0.7,
+      0.705,
+      0.75
+    ],
+    "lime_samples": 10000,
+    "lime_examples_per_config": 3,
+    "stability_instances": 20,
+    "stability_seeds": 10,
+    "decode_repeats": 5,
+    "bootstrap_reps": 1000,
+    "noise_levels": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": 5,
+      "n_jobs": -1
+    }
+  },
+  "exact_eps0_ceilings": {
+    "basis": 1.0,
+    "angle": 0.6696310698261275,
+    "entangling": 0.6696310698261275
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "total_flagged": 55063,
+  "total_instances": 120000
+}

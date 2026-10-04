@@ -1,0 +1,218 @@
+[    0.0s] ======================================================================
+[    0.0s] STARTING BENCHMARK PIPELINE
+[    0.0s] output directory: /home/asesh/qip/official_qip/outputs/run4
+[    0.0s] ======================================================================
+[    0.0s] Self-checks (exact quadrature, no sampling error)
+[    0.2s]   eps=0 Bayes ceiling basis      = 1.0000
+[    0.2s]   eps=0 Bayes ceiling angle      = 0.6696
+[    0.2s]   eps=0 Bayes ceiling entangling = 0.6696
+[    0.2s]   analytic (1/2+1/pi)^2        = 0.6696
+[    0.2s]   self-checks passed
+[    0.2s] Loading dataset data/quantum_dataset_10000.csv
+[    0.2s]   train base inputs: 2000  test base inputs: 2000
+[    0.2s]   test class counts: {'00': 475, '01': 504, '10': 531, '11': 490}
+[    0.2s] [01/12] encoder=basis epsilon=0.00
+[    0.2s]   simulating training circuits (2000 inputs x 5 shots)
+[    0.4s]   fitting Random Forest + grouped Platt calibration
+[    0.9s]     fit instances=7500  calibration instances=2500
+[    1.0s]   simulating test circuits (2000 inputs x 5 shots)
+[    1.1s]   decoding + calibrated posteriors
+[    1.4s]   accuracy=1.0000 [1.0000,1.0000]  ECE=0.0016  Brier=0.0000  meanPeak=0.9984
+[    1.4s]     expected Basis accuracy under Eq.(7): 1.0000
+[    1.4s]   figures: confusion matrix + reliability diagram
+[    1.6s]     figure -> cm_basis_0.00.png
+[    1.7s]     figure -> reliability_basis_0.00.png
+[    1.7s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[    1.7s] [02/12] encoder=basis epsilon=0.05
+[    1.7s]   simulating training circuits (2000 inputs x 5 shots)
+[    1.9s]   fitting Random Forest + grouped Platt calibration
+[    2.3s]     fit instances=7500  calibration instances=2500
+[    2.3s]   simulating test circuits (2000 inputs x 5 shots)
+[    2.5s]   decoding + calibrated posteriors
+[    2.9s]   accuracy=0.9745 [0.9713,0.9776]  ECE=0.0043  Brier=0.0498  meanPeak=0.9702
+[    2.9s]     expected Basis accuracy under Eq.(7): 0.9750
+[    2.9s]   figures: confusion matrix + reliability diagram
+[    3.0s]     figure -> cm_basis_0.05.png
+[    3.1s]     figure -> reliability_basis_0.05.png
+[    3.1s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[    3.1s] [03/12] encoder=basis epsilon=0.10
+[    3.1s]   simulating training circuits (2000 inputs x 5 shots)
+[    3.3s]   fitting Random Forest + grouped Platt calibration
+[    3.9s]     fit instances=7500  calibration instances=2500
+[    4.0s]   simulating test circuits (2000 inputs x 5 shots)
+[    4.3s]   decoding + calibrated posteriors
+[    4.6s]   accuracy=0.9508 [0.9462,0.9553]  ECE=0.0050  Brier=0.0938  meanPeak=0.9458
+[    4.6s]     expected Basis accuracy under Eq.(7): 0.9502
+[    4.6s]   figures: confusion matrix + reliability diagram
+[    4.7s]     figure -> cm_basis_0.10.png
+[    4.9s]     figure -> reliability_basis_0.10.png
+[    4.9s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[    4.9s] [04/12] encoder=basis epsilon=0.20
+[    4.9s]   simulating training circuits (2000 inputs x 5 shots)
+[    5.1s]   fitting Random Forest + grouped Platt calibration
+[    5.7s]     fit instances=7500  calibration instances=2500
+[    5.7s]   simulating test circuits (2000 inputs x 5 shots)
+[    5.9s]   decoding + calibrated posteriors
+[    6.3s]   accuracy=0.9030 [0.8967,0.9092]  ECE=0.0220  Brier=0.1762  meanPeak=0.9077
+[    6.3s]     expected Basis accuracy under Eq.(7): 0.9017
+[    6.3s]   figures: confusion matrix + reliability diagram
+[    6.5s]     figure -> cm_basis_0.20.png
+[    6.6s]     figure -> reliability_basis_0.20.png
+[    6.6s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[    6.6s]     Basis never flagged: explaining the lowest-confidence instance for contrast
+[    6.6s]   timing 1 naive explanations (10000 perturbations each)
+[    6.8s]     figure -> explanation_basis_0.20_10.png
+[    6.8s] [05/12] encoder=angle epsilon=0.00
+[    6.8s]   simulating training circuits (2000 inputs x 5 shots)
+[    7.0s]   fitting Random Forest + grouped Platt calibration
+[    7.5s]     fit instances=7500  calibration instances=2500
+[    7.5s]   simulating test circuits (2000 inputs x 5 shots)
+[    7.8s]   decoding + calibrated posteriors
+[    8.1s]   accuracy=0.6677 [0.6562,0.6790]  ECE=0.0051  Brier=0.5114  meanPeak=0.6728
+[    8.1s]   figures: confusion matrix + reliability diagram
+[    8.2s]     figure -> cm_angle_0.00.png
+[    8.3s]     figure -> reliability_angle_0.00.png
+[    8.3s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[    8.3s] [06/12] encoder=angle epsilon=0.05
+[    8.3s]   simulating training circuits (2000 inputs x 5 shots)
+[    8.6s]   fitting Random Forest + grouped Platt calibration
+[    9.1s]     fit instances=7500  calibration instances=2500
+[    9.1s]   simulating test circuits (2000 inputs x 5 shots)
+[    9.5s]   decoding + calibrated posteriors
+[    9.8s]   accuracy=0.6370 [0.6250,0.6488]  ECE=0.0118  Brier=0.5456  meanPeak=0.6488
+[    9.8s]   figures: confusion matrix + reliability diagram
+[   10.0s]     figure -> cm_angle_0.05.png
+[   10.1s]     figure -> reliability_angle_0.05.png
+[   10.1s]   gate tau=0.65: flagged 5063/10000 (50.6%)
+[   10.1s]   timing 3 naive explanations (10000 perturbations each)
+[   10.3s]     figure -> explanation_angle_0.05_2.png
+[   10.5s]     figure -> explanation_angle_0.05_6.png
+[   10.7s]     figure -> explanation_angle_0.05_7.png
+[   10.7s]   surrogate stability across perturbation seeds
+[   16.7s]     mean Spearman=1.000  (undefined for 0/20 instances)
+[   16.7s] [07/12] encoder=angle epsilon=0.10
+[   16.7s]   simulating training circuits (2000 inputs x 5 shots)
+[   16.9s]   fitting Random Forest + grouped Platt calibration
+[   17.5s]     fit instances=7500  calibration instances=2500
+[   17.6s]   simulating test circuits (2000 inputs x 5 shots)
+[   17.9s]   decoding + calibrated posteriors
+[   18.3s]   accuracy=0.6119 [0.6007,0.6226]  ECE=0.0064  Brier=0.5676  meanPeak=0.6183
+[   18.3s]   figures: confusion matrix + reliability diagram
+[   18.4s]     figure -> cm_angle_0.10.png
+[   18.6s]     figure -> reliability_angle_0.10.png
+[   18.6s]   gate tau=0.65: flagged 10000/10000 (100.0%)
+[   18.6s]   timing 3 naive explanations (10000 perturbations each)
+[   18.8s]     figure -> explanation_angle_0.10_0.png
+[   18.9s]     figure -> explanation_angle_0.10_1.png
+[   19.1s]     figure -> explanation_angle_0.10_2.png
+[   19.1s]   surrogate stability across perturbation seeds
+[   25.4s]     mean Spearman=1.000  (undefined for 6/20 instances)
+[   25.4s] [08/12] encoder=angle epsilon=0.20
+[   25.4s]   simulating training circuits (2000 inputs x 5 shots)
+[   25.7s]   fitting Random Forest + grouped Platt calibration
+[   26.3s]     fit instances=7500  calibration instances=2500
+[   26.3s]   simulating test circuits (2000 inputs x 5 shots)
+[   26.6s]   decoding + calibrated posteriors
+[   27.0s]   accuracy=0.5687 [0.5581,0.5795]  ECE=0.0134  Brier=0.6080  meanPeak=0.5821
+[   27.0s]   figures: confusion matrix + reliability diagram
+[   27.1s]     figure -> cm_angle_0.20.png
+[   27.3s]     figure -> reliability_angle_0.20.png
+[   27.3s]   gate tau=0.65: flagged 10000/10000 (100.0%)
+[   27.3s]   timing 3 naive explanations (10000 perturbations each)
+[   27.5s]     figure -> explanation_angle_0.20_0.png
+[   27.6s]     figure -> explanation_angle_0.20_1.png
+[   27.8s]     figure -> explanation_angle_0.20_2.png
+[   27.8s]   surrogate stability across perturbation seeds
+[   34.0s]     mean Spearman=1.000  (undefined for 6/20 instances)
+[   34.0s] [09/12] encoder=entangling epsilon=0.00
+[   34.0s]   simulating training circuits (2000 inputs x 5 shots)
+[   34.2s]   fitting Random Forest + grouped Platt calibration
+[   34.8s]     fit instances=7500  calibration instances=2500
+[   34.9s]   simulating test circuits (2000 inputs x 5 shots)
+[   35.1s]   decoding + calibrated posteriors
+[   35.5s]   accuracy=0.6686 [0.6578,0.6804]  ECE=0.0049  Brier=0.5107  meanPeak=0.6637
+[   35.5s]   figures: confusion matrix + reliability diagram
+[   35.6s]     figure -> cm_entangling_0.00.png
+[   35.7s]     figure -> reliability_entangling_0.00.png
+[   35.7s]   gate tau=0.65: flagged 0/10000 (0.0%)
+[   35.7s] [10/12] encoder=entangling epsilon=0.05
+[   35.7s]   simulating training circuits (2000 inputs x 5 shots)
+[   36.0s]   fitting Random Forest + grouped Platt calibration
+[   36.5s]     fit instances=7500  calibration instances=2500
+[   36.5s]   simulating test circuits (2000 inputs x 5 shots)
+[   36.9s]   decoding + calibrated posteriors
+[   37.2s]   accuracy=0.6201 [0.6091,0.6310]  ECE=0.0038  Brier=0.5624  meanPeak=0.6239
+[   37.2s]   figures: confusion matrix + reliability diagram
+[   37.3s]     figure -> cm_entangling_0.05.png
+[   37.5s]     figure -> reliability_entangling_0.05.png
+[   37.5s]   gate tau=0.65: flagged 10000/10000 (100.0%)
+[   37.5s]   timing 3 naive explanations (10000 perturbations each)
+[   37.7s]     figure -> explanation_entangling_0.05_0.png
+[   37.8s]     figure -> explanation_entangling_0.05_1.png
+[   38.0s]     figure -> explanation_entangling_0.05_2.png
+[   38.0s]   surrogate stability across perturbation seeds
+[   44.3s]     mean Spearman=1.000  (undefined for 6/20 instances)
+[   44.3s] [11/12] encoder=entangling epsilon=0.10
+[   44.3s]   simulating training circuits (2000 inputs x 5 shots)
+[   44.6s]   fitting Random Forest + grouped Platt calibration
+[   45.1s]     fit instances=7500  calibration instances=2500
+[   45.1s]   simulating test circuits (2000 inputs x 5 shots)
+[   45.5s]   decoding + calibrated posteriors
+[   45.8s]   accuracy=0.5915 [0.5816,0.6026]  ECE=0.0325  Brier=0.5893  meanPeak=0.5992
+[   45.8s]   figures: confusion matrix + reliability diagram
+[   45.9s]     figure -> cm_entangling_0.10.png
+[   46.1s]     figure -> reliability_entangling_0.10.png
+[   46.1s]   gate tau=0.65: flagged 10000/10000 (100.0%)
+[   46.1s]   timing 3 naive explanations (10000 perturbations each)
+[   46.3s]     figure -> explanation_entangling_0.10_0.png
+[   46.5s]     figure -> explanation_entangling_0.10_1.png
+[   46.7s]     figure -> explanation_entangling_0.10_2.png
+[   46.7s]   surrogate stability across perturbation seeds
+[   52.9s]     mean Spearman=1.000  (undefined for 5/20 instances)
+[   52.9s] [12/12] encoder=entangling epsilon=0.20
+[   52.9s]   simulating training circuits (2000 inputs x 5 shots)
+[   53.3s]   fitting Random Forest + grouped Platt calibration
+[   53.8s]     fit instances=7500  calibration instances=2500
+[   53.9s]   simulating test circuits (2000 inputs x 5 shots)
+[   54.3s]   decoding + calibrated posteriors
+[   54.6s]   accuracy=0.5138 [0.5018,0.5236]  ECE=0.0066  Brier=0.6523  meanPeak=0.5072
+[   54.6s]   figures: confusion matrix + reliability diagram
+[   54.7s]     figure -> cm_entangling_0.20.png
+[   54.9s]     figure -> reliability_entangling_0.20.png
+[   54.9s]   gate tau=0.65: flagged 10000/10000 (100.0%)
+[   54.9s]   timing 3 naive explanations (10000 perturbations each)
+[   55.1s]     figure -> explanation_entangling_0.20_0.png
+[   55.3s]     figure -> explanation_entangling_0.20_1.png
+[   55.5s]     figure -> explanation_entangling_0.20_2.png
+[   55.5s]   surrogate stability across perturbation seeds
+[   61.7s]     mean Spearman=1.000  (undefined for 0/20 instances)
+[   61.7s] ======================================================================
+[   61.7s] EXPORTING TABLES (CSV + LaTeX)
+[   61.7s]   csv -> tables/metrics.csv
+[   61.7s]   csv -> tables/calibration_metrics.csv
+[   61.7s]   csv -> tables/macro_metrics.csv
+[   61.7s]   csv -> tables/fidelity.csv
+[   61.7s]   csv -> tables/timings.csv
+[   61.7s]   csv -> tables/feature_importance.csv
+[   61.7s]   csv -> tables/confusion_matrices.csv
+[   61.7s]   csv -> tables/table8_trigger_stats.csv
+[   61.7s]   csv -> tables/tableS2_state_posteriors.csv
+[   61.7s]   csv -> tables/tau_sweep_exact.csv
+[   61.7s]   csv -> tables/lime_timing.csv
+[   61.7s]   csv -> tables/lime_stability.csv
+[   62.1s]   csv -> predictions.csv, tables/local_explanations.csv
+[   62.1s]   projected explanation time: 0.82 h flagged vs 1.79 h all (projections, not measurements)
+[   62.1s]   latex -> tables/table3..8, S2, tau_sweep (.tex)
+[   62.1s] ======================================================================
+[   62.1s] GENERATING SUMMARY FIGURES
+[   62.3s]     figure -> accuracy_vs_noise.png
+[   62.5s]     figure -> fidelity_vs_noise.png
+[   62.7s]     figure -> ece_vs_noise.png
+[   62.9s]     figure -> brier_vs_noise.png
+[   63.5s]     figure -> reliability_grid.png
+[   63.8s]     figure -> timings.png
+[   63.9s]     figure -> feature_importance.png
+[   64.1s]     figure -> peak_posterior_vs_noise.png
+[   64.1s] ======================================================================
+[   64.1s] DONE in 64.1s. Flagged 55063/120000 (45.9%).
+[   64.1s] Outputs: /home/asesh/qip/official_qip/outputs/run4  (figures/, tables/, arrays/, models/, predictions.csv)

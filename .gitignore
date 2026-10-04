@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+outputs/*/models/
+outputs/*/arrays/
+outputs/*/predictions.csv
+outputs/check/
+*.joblib
+*.npy
+*.log
+pipeline_v2.py

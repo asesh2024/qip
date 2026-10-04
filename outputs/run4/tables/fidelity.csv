@@ -1,0 +1,13 @@
+encoder,noise,mean_fidelity
+basis,0.0,1.0
+basis,0.05,0.974965625
+basis,0.1,0.9502375
+basis,0.2,0.9017
+angle,0.0,1.0
+angle,0.05,0.950625
+angle,0.1,0.9025
+angle,0.2,0.81
+entangling,0.0,1.0
+entangling,0.05,0.909902922483315
+entangling,0.1,0.8270348857872246
+entangling,0.2,0.6818575972933917
