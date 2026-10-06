@@ -1,0 +1,8 @@
+contrast,eps=0.00,eps=0.05,eps=0.10,eps=0.20
+entanglement | no mid-noise   (cnot_none - angle),0.0,-1.1102230246251565e-16,0.0,0.0
+entanglement | local mid-noise (cnot_local - id_local),0.0,-0.002838354315753522,-0.005505236102917754,-0.009996543510786715
+entanglement | joint mid-noise (cnot_joint - id_joint),0.0,-1.1102230246251565e-16,0.0,0.0
+joint noise on product state   (id_joint - angle),0.0,-0.0196918380055896,-0.0368549056315709,-0.06389869329562625
+local noise on product state   (id_local - angle),0.0,-0.02403535049685812,-0.0442412199190968,-0.0742739825006023
+"joint vs local noise, entangled (cnot_joint - cnot_local)",0.0,0.0071818668070219305,0.012891550390443651,0.02037183271576276
+ORIGINAL GAP                   (cnot_joint - angle),0.0,-0.019691838005589712,-0.0368549056315709,-0.06389869329562625

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Mean $\pm$ standard deviation over 10 independent runs (fixed dataset; shots, forest and split vary).}
+\label{tab:multiseed}
+\begin{tabular}{llcccc}
+\toprule
+Encoder & $\epsilon$ & Accuracy & ECE & Brier & Flagged / 10{,}000\\
+\midrule
+Basis & 0.00 & 1.0000$\pm$0.0000 & 0.0016$\pm$0.0000 & 0.0000$\pm$0.0000 & 0$\pm$0\\
+Basis & 0.05 & 0.9737$\pm$0.0017 & 0.0021$\pm$0.0011 & 0.0513$\pm$0.0033 & 0$\pm$0\\
+Basis & 0.10 & 0.9499$\pm$0.0017 & 0.0034$\pm$0.0025 & 0.0955$\pm$0.0033 & 0$\pm$0\\
+Basis & 0.20 & 0.9027$\pm$0.0038 & 0.0232$\pm$0.0067 & 0.1767$\pm$0.0064 & 0$\pm$0\\
+\midrule
+Angle & 0.00 & 0.6678$\pm$0.0056 & 0.0098$\pm$0.0070 & 0.5118$\pm$0.0065 & 254$\pm$802\\
+Angle & 0.05 & 0.6424$\pm$0.0051 & 0.0153$\pm$0.0079 & 0.5394$\pm$0.0051 & 3{,}538$\pm$3{,}176\\
+Angle & 0.10 & 0.6165$\pm$0.0049 & 0.0116$\pm$0.0060 & 0.5640$\pm$0.0047 & 9{,}250$\pm$1{,}698\\
+Angle & 0.20 & 0.5693$\pm$0.0036 & 0.0268$\pm$0.0118 & 0.6083$\pm$0.0041 & 10{,}000$\pm$0\\
+\midrule
+Entangling & 0.00 & 0.6690$\pm$0.0025 & 0.0119$\pm$0.0111 & 0.5108$\pm$0.0032 & 506$\pm$1{,}601\\
+Entangling & 0.05 & 0.6258$\pm$0.0035 & 0.0126$\pm$0.0075 & 0.5569$\pm$0.0039 & 7{,}765$\pm$2{,}188\\
+Entangling & 0.10 & 0.5826$\pm$0.0053 & 0.0192$\pm$0.0087 & 0.5974$\pm$0.0050 & 10{,}000$\pm$0\\
+Entangling & 0.20 & 0.5045$\pm$0.0052 & 0.0212$\pm$0.0133 & 0.6593$\pm$0.0039 & 10{,}000$\pm$0\\
+\bottomrule
+\end{tabular}
+\end{table}
