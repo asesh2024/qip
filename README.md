@@ -18,6 +18,6 @@ First 2,000 rows are training inputs, last 2,000 are test inputs. Each circuit i
 `tables/` (CSV and LaTeX for every paper table), `figures/`, `run_manifest.json`.
 Models, posterior arrays and predictions are not committed.
 
-## Notes
-- Results come from one seed pair (train 42, test 100); variation across seeds was not measured.
-- `legacy/pipeline_original.py` is the earlier script, kept for provenance. It is NOT the code behind the current paper.
+**Notes**
+* **Multi-Seed Validation:** To strictly bound empirical sampling variability, the benchmark is evaluated across 10 independent random seed pairs (train/test), with aggregate metrics available in `outputs/multiseed/`. Instance-level metrics, confusion matrices, and surrogate explanations are drawn from a detailed representative run (train seed 42, test seed 100) located in `outputs/run4/`.
+* **Code Provenance:** The active, definitive codebase used to generate the manuscript's exact Bayes-optimal limits and classical decoder results is maintained in the current repository structure. Any legacy scripts have been deprecated and should not be used to reproduce the current paper.
