@@ -1,29 +1,23 @@
 # Quantum Classification Under Noise: A Comparative Study of Encoding Strategies
 
-This repository provides the official implementation, datasets, and reproducibility suite for evaluating the noise resilience, probabilistic calibration, and interpretability of Basis, Angle, and Amplitude quantum encodings under depolarizing noise.
+Basis, Angle and Entangling (CNOT-correlated) encodings of a two-qubit, four-class problem,
+simulated as exact density matrices in NumPy (no Qiskit), with Random Forest + Platt calibration
+and confidence-gated LIME-style surrogates.
 
-##  Repository Structure
-- `src/pipeline.py`: Runs end-to-end quantum state synthesis, depolarizing channel simulation, Platt-calibrated Random Forest classification, and metric evaluation (ECE, Brier score, state fidelity).
-- `src/explainability_lime.py`: Generates constrained local surrogate (LIME) feature attributions.
-- `data/`: Contains base synthetic parameter datasets and train/calibration/test splits.
-- `outputs/`: Evaluation metrics (CSV), trained model artifacts, and high-resolution figures.
+## Run
+    python -m venv venv && source venv/bin/activate
+    pip install -r requirements.txt
+    python src/pipeline.py --quick --dataset_path data/quantum_dataset_10000.csv --output_dir outputs/test   # ~1 min smoke test
+    python src/pipeline.py --dataset_path data/quantum_dataset_10000.csv --output_dir outputs/run4          # full run, ~1-2 min
 
-##  Quickstart & Reproduction
+## Data
+`data/quantum_dataset_10000.csv`: 4,000 base inputs (`feature_a`, `feature_b`, `label`), i.i.d. uniform on [0, pi]^2.
+First 2,000 rows are training inputs, last 2,000 are test inputs. Each circuit is run for 5 shots, and each shot is one instance.
 
-### 1. Environment Setup
-```bash
-python3 -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+## Outputs (`outputs/run4/`)
+`tables/` (CSV and LaTeX for every paper table), `figures/`, `run_manifest.json`.
+Models, posterior arrays and predictions are not committed.
 
-
-### 2. Run main pipeline
-
-python src/pipeline.py
-
-
-### 3. Generate LIME Interpretability Figures
-
-python src/explainability_lime.py --output_dir outputs --samples 10000
-
-
+## Notes
+- Results come from one seed pair (train 42, test 100); variation across seeds was not measured.
+- `legacy/pipeline_original.py` is the earlier script, kept for provenance. It is NOT the code behind the current paper.
